@@ -9,7 +9,7 @@ const projectData = [
             This is a more detailed description of the project. It explains the
             This is a more detailed description of the project. It explains the
             main features, technologies used, and the problem it solves `,
-    techStack: ["Nextjs", "prisma", "Postgresql", "expressJs"],
+    techStack: ["Nextjs", "Prisma", "Postgresql", "ExpressJs"],
     githubLink: "https://github.com/PatelYash7",
     liveLink: "https://github.com/PatelYash7",
     imageUrl:'https://avatars.githubusercontent.com/u/109963122?v=4 '
@@ -20,7 +20,7 @@ const projectData = [
             This is a more detailed description of the project. It explains the
             This is a more detailed description of the project. It explains the
             main features, technologies used, and the problem it solves `,
-    techStack: ["Nextjs", "prisma", "Postgresql", "expressJs"],
+    techStack: ["Nextjs", "Prisma", "Postgresql", "ExpressJs"],
     githubLink: "https://github.com/PatelYash7",
     liveLink: "https://github.com/PatelYash7",
     imageUrl:'https://avatars.githubusercontent.com/u/109963122?v=4'
@@ -36,8 +36,8 @@ type projectDataType = {
 };
 export const Projects = () => {
   return (
-    <div className="my-4">
-      <h2 className="text-white text-3xl font-semibold">Recent Projects </h2>
+    <div className="mb-4 mt-2">
+      <h2 className="text-white text-3xl font-semibold">Projects </h2>
       {projectData.map((project, i) => (
         <div key={i} className="py-4">
           <ProjectCard projectDetails={project} />
@@ -87,7 +87,7 @@ const ProjectCard = ({
 };
 const TechStackBox = ({ name }: { name: string }) => {
   return (
-    <div className="border-[0.2px] cursor-default px-4 py-1 rounded-md border-gray-500">
+    <div className="border-[0.2px] flex justify-center items-center cursor-default hover:text-white hover:font-bold duration-200 w-[100px]  text-center  h-8 rounded-md border-gray-500">
       {name}
     </div>
   );

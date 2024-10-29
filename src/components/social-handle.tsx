@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 export const SocialHandles = () => {
   return (
-    <div className="py-4 h-20">
+    <div className="pt-4 h-20">
       <div className="flex justify-between">
         <div
           className="flex text-2xl space-x-6 hover:text-4xl
