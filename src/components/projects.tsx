@@ -4,35 +4,46 @@ import Link from "next/link";
 
 const projectData = [
   {
-    projectTitle: "ProjectName",
-    projectDescription: `This is a more detailed description of the project. It explains the
-            This is a more detailed description of the project. It explains the
-            This is a more detailed description of the project. It explains the
-            main features, technologies used, and the problem it solves `,
-    techStack: ["Nextjs", "Prisma", "Postgresql", "ExpressJs"],
-    githubLink: "https://github.com/PatelYash7",
-    liveLink: "https://github.com/PatelYash7",
-    imageUrl:'https://avatars.githubusercontent.com/u/109963122?v=4 '
+    projectTitle: "Money Mingle",
+    projectDescription: `Built a wallet-to-wallet transfer system, enabling users to transact funds between their wallets efficiently.\nIntegrated bank-to-wallet and wallet-to-bank transfer functionality, allowing users to seamlessly manage their bank accounts and wallet balances.\nImplemented NextAuth for advanced authentication, including email-based user verification to enhance account security.`,
+    techStack: ["Nextjs", "Postgresql", "Prisma", "Recoil", "Next-auth"],
+    githubLink: "https://github.com/PatelYash7/money-mingle-client",
+    liveLink: "https://moneymingle.patelyash.tech/",
+    imageUrl: "/moneymingle.png",
   },
   {
-    projectTitle: "ProjectName",
-    projectDescription: `This is a more detailed description of the project. It explains the
-            This is a more detailed description of the project. It explains the
-            This is a more detailed description of the project. It explains the
-            main features, technologies used, and the problem it solves `,
-    techStack: ["Nextjs", "Prisma", "Postgresql", "ExpressJs"],
-    githubLink: "https://github.com/PatelYash7",
-    liveLink: "https://github.com/PatelYash7",
-    imageUrl:'https://avatars.githubusercontent.com/u/109963122?v=4'
+    projectTitle: "Discord-Bot-Dasboard ",
+    projectDescription: `Bot-Manager is a Web Application for managing the TectTOnions Discord bot. Server admin or Moderator can Add Various functionalities like role setup, Level Setup, and Channel Management.\nIntegrated the Backend API's with the UI/UX. Added Discord OAuth2 for user Authentication. Designed and Implemented Complex UI with react-router. Used RecoilJS for global state management in react application.\n Implemented CI/CD Pipeline which Deploys the Code in
+            AWS EC2.`,
+    techStack: ["Reactjs", "React-router", "RecoilJs"],
+    githubLink: "https://github.com/TechTOnions/TechTOnions_Discord_Bot",
+    liveLink: "https://github.com/TechTOnions/TechTOnions_Discord_Bot",
+    imageUrl: "/moneymingle.png",
+  },
+  {
+    projectTitle: " next-development-kit ",
+    projectDescription: `A project template designed to streamline the development of modern web applications with Next.js, Prisma, Shadcn, and NextAuth.\n Built-in authentication to support secure user sign-ins with minimal configuration.`,
+    // techStack: ["Reactjs", "Postgresql", "Honojs"],
+    githubLink: "https://github.com/PatelYash7/nextjs-development-kit",
+    liveLink: "https://cli.patelyash.tech/",
+    imageUrl: "/cli.png",
+  },
+  {
+    projectTitle: "Blogosphere ",
+    projectDescription: `A blogging website where users can sign in securely and share their blogs.\n Used PostgreSQL and Prisma client to manage Database effectively and utilized React for UI/UX and made it Typesafe using Typescript.\nUtilized the power of Honojs to develop API and deployed it in Edge Network (Cloudflare Worker). `,
+    techStack: ["Reactjs", "Postgresql", "Honojs"],
+    githubLink: "https://github.com/PatelYash7/Blogosphere",
+    liveLink: "https://blogosphere.patelyash.tech/",
+    imageUrl: "/moneymingle.png",
   },
 ];
 type projectDataType = {
   projectTitle: string;
   projectDescription: string;
-  techStack: string[];
+  techStack?: string[];
   githubLink: string;
   liveLink: string;
-  imageUrl:string;
+  imageUrl: string;
 };
 export const Projects = () => {
   return (
@@ -57,7 +68,7 @@ const ProjectCard = ({
       <div className="grid grid-cols-5">
         <div className="col-span-3">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold py-2 cursor-default">
+            <div className="text-xl font-bold py-2 cursor-default">
               {projectDetails.projectTitle}
             </div>
             <div className="flex items-center space-x-4">
@@ -69,17 +80,26 @@ const ProjectCard = ({
               </Link>
             </div>
           </div>
-          <div className="text-lg text-justify font-medium cursor-default">
-            {projectDetails.projectDescription}
+          <div className="text-sm font-medium cursor-default whitespace-pre-line">
+            {projectDetails.projectDescription
+              .split("\n")
+              .map((sentence) => `• ${sentence}`)
+              .join("\n")}
           </div>
-          <div className="flex space-x-2 mt-2 py-2">
-            {projectDetails.techStack.map((e, i) => (
+          <div className="grid grid-cols-4 gap-y-2 mt-2 py-2">
+            {projectDetails.techStack?.map((e, i) => (
               <TechStackBox name={e} key={i} />
             ))}
           </div>
         </div>
         <div className="col-span-2 flex justify-center items-center relative ">
-            <Image src={projectDetails.imageUrl} alt="projectImage"width={200} className="" height={200} />
+          <Image
+            src={projectDetails.imageUrl}
+            alt="projectImage"
+            width={300}
+            className=""
+            height={300}
+          />
         </div>
       </div>
     </div>
@@ -87,7 +107,7 @@ const ProjectCard = ({
 };
 const TechStackBox = ({ name }: { name: string }) => {
   return (
-    <div className="border-[0.2px] flex justify-center items-center cursor-default hover:text-white hover:font-bold duration-200 w-[100px]  text-center  h-8 rounded-md border-gray-500">
+    <div className="border-[0.2px] col-span-1 flex justify-center items-center cursor-default hover:text-white hover:font-bold duration-200 w-[100px]  text-center  h-8 rounded-md border-gray-500">
       {name}
     </div>
   );

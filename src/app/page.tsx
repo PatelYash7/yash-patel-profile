@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 import { SocialHandles } from "@/components/social-handle";
+import { WorkExperience } from "@/components/work-experience";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <SocialHandles />
       <Skills/>
+      <WorkExperience/>
       <Projects/>
     </div>
   );
