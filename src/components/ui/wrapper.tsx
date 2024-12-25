@@ -1,6 +1,6 @@
 "use client";
 import { MouseEvent, ReactNode, useRef } from "react";
-import { Circle } from "./Circle";
+import Circle  from "./Circle";
 
 export const Wrapper = ({ children }: { children: ReactNode }) => {
   const handleMouse = (

@@ -1,7 +1,5 @@
-import { Dot } from "lucide-react";
 import { ForwardedRef, forwardRef } from "react";
-
-export const Circle = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
+const Circle = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
     <div
       ref={ref}
@@ -12,3 +10,5 @@ export const Circle = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
     </div>
   );
 });
+Circle.displayName = "Search";
+export default Circle;
