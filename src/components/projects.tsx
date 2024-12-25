@@ -65,10 +65,10 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="border-[0.4px]  rounded-lg px-4 py-2 text-white border-gray-700">
-      <div className="grid grid-cols-5">
-        <div className="col-span-3">
+      <div className="grid grid-cols-1 sm:grid-cols-5">
+        <div className="sm:col-span-3">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold py-2 cursor-default">
+            <div className="text-xl font-bold py-2 ">
               {projectDetails.projectTitle}
             </div>
             <div className="flex items-center space-x-4">
@@ -80,19 +80,19 @@ const ProjectCard = ({
               </Link>
             </div>
           </div>
-          <div className="text-sm font-medium cursor-default whitespace-pre-line">
+          <div className="text-sm font-medium  whitespace-pre-line">
             {projectDetails.projectDescription
               .split("\n")
               .map((sentence) => `• ${sentence}`)
               .join("\n")}
           </div>
-          <div className="grid grid-cols-4 gap-y-2 mt-2 py-2">
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-4 sm:gap-x-0 gap-y-2 mt-2 py-2">
             {projectDetails.techStack?.map((e, i) => (
               <TechStackBox name={e} key={i} />
             ))}
           </div>
         </div>
-        <div className="col-span-2 flex justify-center items-center relative ">
+        <div className="  sm:col-span-2 flex justify-center items-center relative  ">
           <Image
             src={projectDetails.imageUrl}
             alt="projectImage"

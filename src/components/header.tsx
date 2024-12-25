@@ -12,7 +12,7 @@ export const Header = () => {
       ></Image>
       <div>
         <h1 className="text-4xl font-bold py-4 text-white">Yash Patel</h1>
-        <h2 className=" text-lg text-justify text-gray-400">
+        <h2 className=" text-lg text-left sm:text-justify text-gray-400">
           I&apos;m a Full Stack Engineer with experience in building
           <span className="text-white font-bold"> Web applications </span>{" "}
           end-to-end. I have a strong background in both{" "}
