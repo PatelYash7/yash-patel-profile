@@ -13,15 +13,14 @@ const projectData = [
   },
   {
     projectTitle: "Discord-Bot-Dasboard ",
-    projectDescription: `Bot-Manager is a Web Application for managing the TectTOnions Discord bot. Server admin or Moderator can Add Various functionalities like role setup, Level Setup, and Channel Management.\nIntegrated the Backend API's with the UI/UX. Added Discord OAuth2 for user Authentication. Designed and Implemented Complex UI with react-router. Used RecoilJS for global state management in react application.\n Implemented CI/CD Pipeline which Deploys the Code in
-            AWS EC2.`,
+    projectDescription: `Bot-Manager is a Web Application for managing the TectTOnions Discord bot. Server admin or Moderator can Add Various functionalities like role setup, Level Setup, and Channel Management.\nIntegrated the Backend API's with the UI/UX. Added Discord OAuth2 for user Authentication. Designed and Implemented Complex UI with react-router. Used RecoilJS for global state management in react application.\n Implemented CI/CD Pipeline which Deploys the Code in  AWS EC2.`,
     techStack: ["Reactjs", "React-router", "RecoilJs"],
     githubLink: "https://github.com/TechTOnions/TechTOnions_Discord_Bot",
     liveLink: "https://github.com/TechTOnions/TechTOnions_Discord_Bot",
-    imageUrl: "/moneymingle.png",
+    imageUrl: "/bot_dashboard.png",
   },
   {
-    projectTitle: " next-development-kit ",
+    projectTitle: " Next Development Template ",
     projectDescription: `A project template designed to streamline the development of modern web applications with Next.js, Prisma, Shadcn, and NextAuth.\n Built-in authentication to support secure user sign-ins with minimal configuration.`,
     // techStack: ["Reactjs", "Postgresql", "Honojs"],
     githubLink: "https://github.com/PatelYash7/nextjs-development-kit",
@@ -34,7 +33,7 @@ const projectData = [
     techStack: ["Reactjs", "Postgresql", "Honojs"],
     githubLink: "https://github.com/PatelYash7/Blogosphere",
     liveLink: "https://blogosphere.patelyash.tech/",
-    imageUrl: "/moneymingle.png",
+    imageUrl: "/blogosphere.png",
   },
 ];
 type projectDataType = {

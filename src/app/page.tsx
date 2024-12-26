@@ -7,14 +7,17 @@ import { WorkExperience } from "@/components/work-experience";
 
 export default function Home() {
   return (
-    <Wrapper>
-      <div className="flex sm:max-w-4xl justify-center mb-8 mt-4 flex-col relative">
-        <Header />
-        <SocialHandles />
-        <Skills />
-        <WorkExperience />
-        <Projects />
-      </div>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <div className="flex sm:max-w-4xl  justify-center mb-8 mt-4 flex-col relative">
+          <Header />
+          <SocialHandles />
+          <Skills />
+          <WorkExperience />
+          <Projects />
+        </div>
+          
+      </Wrapper>
+    </>
   );
 }
