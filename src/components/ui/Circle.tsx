@@ -4,7 +4,7 @@ const Circle = forwardRef(({}, ref: ForwardedRef<HTMLDivElement>) => {
     <div
       ref={ref}
       style={{ left: 0, right: 0 }}
-      className={`absolute h-8 z-10 w-8 border border-gray-300 flex justify-center items-center rounded-full`}
+      className={`absolute  h-8 z-10 w-8 border border-gray-300 hidden sm:flex justify-center items-center rounded-full`}
     >
         {/* <Dot className="h-8 w-8 text-white"/> */}
     </div>

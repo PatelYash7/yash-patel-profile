@@ -11,14 +11,12 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
       setTimeout(() => {
         mouse.style.left = `${e.clientX}px`;
         mouse.style.top = `${e.pageY}px`;
-      }, 100);
+      },0);
     }
   };
   const mainRef = useRef<HTMLDivElement | null>(null);
-  const RootRef = useRef<HTMLDivElement | null>(null);
   return (
     <div
-      ref={RootRef}
       className=" px-8 sm:mx-auto min-w-screen cursor-none min-h-screen flex justify-center"
       onMouseMove={handleMouse}
     >
