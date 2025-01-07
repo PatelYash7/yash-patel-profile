@@ -22,7 +22,7 @@ export const SocialHandles = () => {
             target="_blank"
             className="bg-white py-2 px-2 rounded-md cursor-pointer text-black hover:bg-gray-900 border-[0.1px] border-white hover:border-[0.1px] hover:border-white  duration-300 font-semibold hover:text-white"
           >
-            Hire Me!!
+            Let Connect!!
           </Link>
         </div>
       </div>

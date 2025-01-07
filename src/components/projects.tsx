@@ -79,7 +79,7 @@ const ProjectCard = ({
               </Link>
             </div>
           </div>
-          <div className="text-[0.9rem] font-light whitespace-pre-line leading-6">
+          <div className="text-lg  font-light whitespace-pre-line leading-7">
             <ul className="list-disc list-inside">
               {projectDetails.projectDescription
                 .split("\n")
