@@ -79,19 +79,22 @@ const ProjectCard = ({
               </Link>
             </div>
           </div>
-          <div className="text-sm font-medium  whitespace-pre-line">
-            {projectDetails.projectDescription
-              .split("\n")
-              .map((sentence) => `• ${sentence}`)
-              .join("\n")}
+          <div className="text-[0.9rem] font-light whitespace-pre-line leading-6">
+            <ul className="list-disc list-inside">
+              {projectDetails.projectDescription
+                .split("\n")
+                .map((sentence, index) => (
+                  <li key={index} className="py-1">{sentence}</li>
+                ))}
+            </ul>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-5 gap-x-4 sm:gap-x-0 gap-y-2 mt-2 py-2">
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-4 sm:gap-x-0 w-full gap-y-2 mt-2 py-2">
             {projectDetails.techStack?.map((e, i) => (
               <TechStackBox name={e} key={i} />
             ))}
           </div>
         </div>
-        <div className="  sm:col-span-2 flex justify-center items-center relative  ">
+        <div className="  sm:col-span-2 flex justify-center items-center relative">
           <Image
             src={projectDetails.imageUrl}
             alt="projectImage"
@@ -106,8 +109,10 @@ const ProjectCard = ({
 };
 const TechStackBox = ({ name }: { name: string }) => {
   return (
-    <div className="border-[0.2px] col-span-1 flex justify-center items-center cursor-default hover:text-white hover:font-bold duration-200 w-[100px]  text-center  h-8 rounded-md border-gray-500">
-      {name}
+    <div className="">
+      <div className="border-[0.2px] col-span-1 flex justify-center items-center cursor-default w-[120px] hover:text-white hover:font-bold duration-200 text-center  h-8 rounded-md border-gray-500">
+        {name}
+      </div>
     </div>
   );
 };

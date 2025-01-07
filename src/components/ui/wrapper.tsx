@@ -9,7 +9,7 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
     const mouse = mainRef.current;
     if (mouse) {
       setTimeout(() => {
-        mouse.style.left = `${e.clientX}px`;
+        mouse.style.left = `${e.clientX-9}px`;
         mouse.style.top = `${e.pageY}px`;
       }, 0);
     }
