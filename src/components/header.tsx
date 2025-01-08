@@ -10,7 +10,7 @@ export const Header = () => {
         className="rounded-lg"
         alt="profileimage"
       ></Image>
-      <div>
+      <div className="">
         <h1 className="text-4xl font-bold py-4 text-white">Yash Patel</h1>
         <h2 className=" text-lg text-left sm:text-justify text-gray-400">
           I&apos;m a Full Stack Engineer with experience in building

@@ -9,6 +9,45 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+
+          to: { height: "0" },
+        },
+
+        "text-reveal": {
+          "0%": {
+            filter: "blur(10px)",
+
+            opacity: "0",
+
+            transform: "translateY(0px)",
+          },
+
+          "100%": {
+            filter: "blur(0)",
+
+            opacity: "1",
+
+            transform: "translateX(0)",
+          },
+        },
+      },
+
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+
+        "accordion-up": "accordion-up 0.2s ease-out",
+
+        "text-reveal": "text-reveal 1s ease-out forwards",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
