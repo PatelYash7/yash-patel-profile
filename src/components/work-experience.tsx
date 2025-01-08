@@ -19,9 +19,9 @@ export const WorkExperience = () => {
                 </Link>
               </div>
             </div>
-            <div className="text-lg font-semibold">Jan-2024 to Present</div>
+            <div className=" text-base sm:text-lg font-semibold">Jan-2024 to Present</div>
           </div>
-          <div className="text-lg font-light leading-7  whitespace-pre-line">
+          <div className=" text-base sm:text-lg font-light leading-7  whitespace-pre-line">
             <ul className=" list-disc list-inside">
               {"Developed and deployed dynamic web-apps in Nodejs.\n  Built and managed relational databases with PostgreSQL and utilized Prisma ORM for efficient data handling, improving query performance by 25.\n Implemented CI/CD pipelines, reducing deployment time by 30% and ensuring seamless updates.\nContainerized applications using Docker and managed deployments on VPS servers, enhancing deployment efficiency."
                 .split("\n")

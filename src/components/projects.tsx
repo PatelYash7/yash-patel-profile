@@ -79,7 +79,7 @@ const ProjectCard = ({
               </Link>
             </div>
           </div>
-          <div className="text-lg  font-light whitespace-pre-line leading-7">
+          <div className=" text-base sm:text-lg  font-light whitespace-pre-line leading-7">
             <ul className="list-disc list-inside">
               {projectDetails.projectDescription
                 .split("\n")
@@ -110,7 +110,7 @@ const ProjectCard = ({
 const TechStackBox = ({ name }: { name: string }) => {
   return (
     <div className="">
-      <div className="border-[0.2px] col-span-1 flex justify-center items-center cursor-default w-[120px] hover:text-white hover:font-bold duration-200 text-center  h-8 rounded-md border-gray-500">
+      <div className="border-[0.2px] col-span-1 flex justify-center items-center cursor-default w-[90px] sm:w-[120px] hover:text-white hover:font-bold duration-200 text-center h-8 sm:text-base text-sm sm:h-8 rounded-md border-gray-500">
         {name}
       </div>
     </div>
