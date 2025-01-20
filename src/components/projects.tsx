@@ -71,10 +71,10 @@ const ProjectCard = ({
               {projectDetails.projectTitle}
             </div>
             <div className="flex items-center space-x-4">
-              <Link href={projectDetails.liveLink} target="_blank">
+              <Link aria-label={`live project-${projectDetails.projectTitle}`}  href={projectDetails.liveLink} target="_blank">
                 <Link2 className=" -rotate-45 hover:scale-110 cursor-pointer" />
               </Link>
-              <Link href={projectDetails.githubLink} target="_blank">
+              <Link href={projectDetails.githubLink} aria-label={`Github-link-${projectDetails.projectTitle}`} target="_blank">
                 <GithubIcon className="hover:scale-110 cursor-pointer" />
               </Link>
             </div>

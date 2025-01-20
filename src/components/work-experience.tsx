@@ -12,6 +12,7 @@ export const WorkExperience = () => {
               Techtonions
               <div className="flex items-center space-x-4">
                 <Link
+                  aria-label="Company website"
                   href={"https://www.techtonions.com/services/"}
                   target="_blank"
                 >
