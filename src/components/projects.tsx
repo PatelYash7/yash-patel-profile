@@ -100,6 +100,7 @@ const ProjectCard = ({
             alt="projectImage"
             width={300}
             className=""
+            quality={30}
             height={300}
           />
         </div>

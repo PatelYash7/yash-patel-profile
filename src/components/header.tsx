@@ -7,9 +7,10 @@ export const Header = () => {
         src={"https://avatars.githubusercontent.com/u/109963122?v=4"}
         width={80}
         height={80}
+        quality={40}
         className="rounded-lg"
         alt="profileimage"
-      ></Image>
+      />
       <div className="">
         <h1 className="text-4xl font-bold py-4 text-white">Yash Patel</h1>
         <h2 className=" text-lg text-left sm:text-justify text-gray-400">
