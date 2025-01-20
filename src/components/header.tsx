@@ -8,6 +8,7 @@ export const Header = () => {
         width={80}
         height={80}
         quality={40}
+        loading={'eager'}
         className="rounded-lg"
         alt="profileimage"
       />
