@@ -37,7 +37,7 @@ export const SocialHandles = () => {
             target="_blank"
             className="bg-white py-2 px-2 sm:text-base text-sm rounded-md cursor-pointer text-black hover:bg-gray-900 border-[0.1px] border-white hover:border-[0.1px] hover:border-white  duration-300 font-semibold hover:text-white"
           >
-            Let's Connect!!
+            Let&apos;s Connect!!
           </Link>
         </div>
       </div>
