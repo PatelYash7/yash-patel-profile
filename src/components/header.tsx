@@ -8,7 +8,7 @@ export const Header = () => {
         width={80}
         height={80}
         quality={40}
-        loading={'eager'}
+        loading={"eager"}
         className="rounded-lg"
         alt="profileimage"
       />
@@ -22,7 +22,8 @@ export const Header = () => {
           <span className="text-white font-bold"> Backend </span> development
           with <span className="text-white font-bold"> DevOps </span>, ensuring
           smooth and efficient deployments. I enjoy transforming ideas into
-          Reality.
+          Reality and currently building{" "}
+          <span className="text-white font-bold"> AI </span> agents to push the human efficiency.
         </h2>
       </div>
     </header>
