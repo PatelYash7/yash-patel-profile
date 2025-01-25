@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 export const SocialHandles = () => {
@@ -9,6 +9,13 @@ export const SocialHandles = () => {
           className="flex text-xl sm:text-2xl space-x-6 sm:hover:text-4xl hover:text-3xl
  text-white"
         >
+          <Link
+            target="_blank"
+            aria-label="Resume link"
+            href={"https://ggl.link/W3kSgJu"}
+          >
+            <FaFilePdf className=" hover:text-5xl duration-300" />
+          </Link>
           <Link
             href={"https://github.com/PatelYash7"}
             target="_blank"
